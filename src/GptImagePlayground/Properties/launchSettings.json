@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GptImagePlayground (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GptImagePlayground (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

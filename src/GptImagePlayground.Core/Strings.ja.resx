@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data xml:space="preserve" name="AddImages">
+    <value>画像を追加</value>
+  </data>
+  <data xml:space="preserve" name="ApiHelp">
+    <value>API: 参照画像なし → POST /openai/v1/images/generations（JSON）。1枚以上 → POST /openai/v1/images/edits（multipart/form-data）。デプロイ名を model に送信します。
+ルート URL・/openai/v1/・画像生成/編集 URL に対応。指定した URL にかかわらず、参照画像の有無に応じて同じリソースの API を選びます。プロジェクト URL や任意の外部ホストは使用できません。</value>
+  </data>
+  <data xml:space="preserve" name="AppIconName">
+    <value>GPT-image-2.5 Playground アイコン</value>
+  </data>
+  <data xml:space="preserve" name="AuthenticationFailed">
+    <value>認証元 {0} で Azure 認証に失敗しました。設定で選んだ認証元とテナントを確認してください。AzureCli は az login --tenant &lt;リソースのテナントID&gt; と az account set --subscription &lt;サブスクリプションID&gt;、VisualStudio は Visual Studio のサインイン設定を確認してください。他の認証元には切り替えません。</value>
+  </data>
+  <data xml:space="preserve" name="AuthenticationHelp">
+    <value>認証: DefaultAzureCredential。既定の AzureCli は Azure CLI のみを使用します。VisualStudio を選んだ場合も他の認証元にフォールバックしません。リソースと同じテナントでサインインし、Cognitive Services OpenAI User ロールを付与してください。AzureCli: az login --tenant &lt;テナントID&gt;、az account set --subscription &lt;サブスクリプションID&gt;。CLI のアカウント変更後はアプリを再起動してください。</value>
+  </data>
+  <data xml:space="preserve" name="AutoPreset">
+    <value>自動 — auto</value>
+  </data>
+  <data xml:space="preserve" name="AutoSizeDescription">
+    <value>自動 (auto): 実際の解像度は生成後に表示されます。</value>
+  </data>
+  <data xml:space="preserve" name="AdvancedSettings">
+    <value>詳細設定</value>
+  </data>
+  <data xml:space="preserve" name="BackgroundHeader">
+    <value>背景</value>
+  </data>
+  <data xml:space="preserve" name="BillingNotice">
+    <value>生成は Azure の料金が発生します。キャンセルは待機の中断であり、課金停止を保証しません。</value>
+  </data>
+  <data xml:space="preserve" name="Cancel">
+    <value>キャンセル</value>
+  </data>
+  <data xml:space="preserve" name="ComposeTab">
+    <value>生成・編集</value>
+  </data>
+  <data xml:space="preserve" name="ConnectionHeading">
+    <value>Azure 接続</value>
+  </data>
+  <data xml:space="preserve" name="ConnectionHelp">
+    <value>gpt-image-2.5-sunburst をデプロイした Foundry / Azure OpenAI リソースを指定します。Foundry に表示される画像生成 URL もそのまま貼り付けられます。キーは使いません。設定は保存後に適用されます。</value>
+  </data>
+  <data xml:space="preserve" name="CredentialHeader">
+    <value>認証元（DefaultAzureCredential で使用するサインイン）</value>
+  </data>
+  <data xml:space="preserve" name="DefaultQualityHeader">
+    <value>既定の画質</value>
+  </data>
+  <data xml:space="preserve" name="DefaultSizeHeader">
+    <value>既定の送信サイズ</value>
+  </data>
+  <data xml:space="preserve" name="DeploymentHeader">
+    <value>デプロイ名（モデル名ではなく Azure 上の名前）</value>
+  </data>
+  <data xml:space="preserve" name="DropImagesOnly">
+    <value>フォルダーではなく画像ファイルをドロップしてください。</value>
+  </data>
+  <data xml:space="preserve" name="Editing">
+    <value>Azure 認証・参照画像の送信・画像編集を待っています（最大10分）。</value>
+  </data>
+  <data xml:space="preserve" name="EmptyDeployment">
+    <value>デプロイ名が空です。</value>
+  </data>
+  <data xml:space="preserve" name="EmptyHistoryMetadata">
+    <value>履歴メタデータが空です。</value>
+  </data>
+  <data xml:space="preserve" name="EmptySettings">
+    <value>設定が空です。</value>
+  </data>
+  <data xml:space="preserve" name="EmptySize">
+    <value>解像度が空です。</value>
+  </data>
+  <data xml:space="preserve" name="EndpointHeader">
+    <value>Foundry / Azure OpenAI エンドポイント URL</value>
+  </data>
+  <data xml:space="preserve" name="ErrorResponseTooLarge">
+    <value>サービスのエラー応答が64 Ki文字を超えたため、詳細を表示できません。</value>
+  </data>
+  <data xml:space="preserve" name="ErrorSharingNotice">
+    <value>自動再送はしていません。詳細を共有する場合は、サービスのメッセージに入力内容が含まれていないか確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="ErrorTitle">
+    <value>処理を確認してください</value>
+  </data>
+  <data xml:space="preserve" name="ExperimentalSize">
+    <value> — 実験的な高解像度です。料金と待ち時間に注意してください。</value>
+  </data>
+  <data xml:space="preserve" name="FileAccessDenied">
+    <value>ファイルへのアクセスが拒否されました。保存場所と権限を確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="FileIoFailed">
+    <value>ファイルの読み書きに失敗しました: {0}</value>
+  </data>
+  <data xml:space="preserve" name="FormatHeader">
+    <value>出力形式</value>
+  </data>
+  <data xml:space="preserve" name="Generate">
+    <value>画像を生成</value>
+  </data>
+  <data xml:space="preserve" name="GeneratedWithReferences">
+    <value>生成結果と参照画像をローカル履歴に保存しました。</value>
+  </data>
+  <data xml:space="preserve" name="GeneratedWithoutReferences">
+    <value>生成結果をローカル履歴に保存しました（参照画像なし）。</value>
+  </data>
+  <data xml:space="preserve" name="Generating">
+    <value>Azure 認証・プロンプトからの画像生成を待っています（最大10分）。</value>
+  </data>
+  <data xml:space="preserve" name="GenerationCancelled">
+    <value>待機をキャンセルしました。サーバー側の生成や課金が止まるとは限りません。既存の結果は保持しています。</value>
+  </data>
+  <data xml:space="preserve" name="HistoryDetails">
+    <value>{0} | {1} | 背景: {2}
+デプロイ: {3}
+{4}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryFileMissing">
+    <value>履歴ファイルが見つかりません: {0}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryFormatMismatch">
+    <value>履歴の画像形式とメタデータが一致しません。</value>
+  </data>
+  <data xml:space="preserve" name="HistoryHelp">
+    <value>開くと、参照画像の順序・プロンプト・パラメーター・出力を復元します。保存ボタンで再保存できます。履歴はこの端末だけに保存されます。</value>
+  </data>
+  <data xml:space="preserve" name="HistoryImageTooLarge">
+    <value>履歴画像がアプリの読み込み上限96 MiBを超えています。</value>
+  </data>
+  <data xml:space="preserve" name="HistoryListName">
+    <value>生成履歴</value>
+  </data>
+  <data xml:space="preserve" name="HistoryLoadFailed">
+    <value>履歴 {0} を読み込めません: {1}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryOpened">
+    <value>履歴を合成画面に開きました。再生成には現在保存されている接続設定を使います。</value>
+  </data>
+  <data xml:space="preserve" name="HistorySaveFailed">
+    <value>履歴の保存に失敗しました。結果は保持されています。「名前を付けて保存」で退避してください。</value>
+  </data>
+  <data xml:space="preserve" name="HistoryTab">
+    <value>履歴</value>
+  </data>
+  <data xml:space="preserve" name="Http400">
+    <value>HTTP 400: API がリクエストを拒否しました。以下のサービス詳細を確認してください。設定は自動で変更しません。</value>
+  </data>
+  <data xml:space="preserve" name="Http401">
+    <value>HTTP 401: Azure 認証を確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="Http403">
+    <value>HTTP 403: リソースの Cognitive Services OpenAI User ロールとネットワーク制限を確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="Http404">
+    <value>HTTP 404: リソース URL とデプロイ名、API の提供状況を確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="Http429">
+    <value>HTTP 429: レート制限またはクォータ超過です。時間をおいて確認してください。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="HttpOther">
+    <value>HTTP {0}: API 呼び出しに失敗しました。生成・課金が完了している可能性があります。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="ImportingReference">
+    <value>参照画像を読み込んでいます: {0}</value>
+  </data>
+  <data xml:space="preserve" name="IncompleteHistory">
+    <value>未完了の履歴が残っています。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidBundledSettings">
+    <value>同梱設定の JSON オブジェクトが不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidCredentialSource">
+    <value>認証元は AzureCli または VisualStudio を選択してください。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidDefaultQuality">
+    <value>既定の画質が不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidDeployment">
+    <value>デプロイ名には英数字、ハイフン、アンダースコア、ピリオドを使用してください（128文字以内）。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidEndpoint">
+    <value>Foundry / Azure OpenAI の HTTPS URL を設定してください。対応ドメイン: services.ai.azure.com、openai.azure.com、cognitiveservices.azure.com。ユーザー情報・クエリ・フラグメント・標準以外のポートは使用できません。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidEndpointPath">
+    <value>リソースのルート URL、/openai/v1/、または /openai/v1/images/generations・edits の URL を指定してください。プロジェクト URL や他の API パスは使用できません。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidErrorResponse">
+    <value>サービスのエラー応答が空、または有効な JSON ではありません。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidHistoryFileName">
+    <value>履歴のファイル名が不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidHistoryMetadata">
+    <value>履歴メタデータが不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidImageData">
+    <value>画像の実データが PNG/JPEG/WebP ではありません。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidImageOptions">
+    <value>画質・出力形式・背景の設定が不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidLocalSettings">
+    <value>ローカル設定の JSON オブジェクトが不正です。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidPrompt">
+    <value>プロンプトを1～32,000文字で入力してください。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferenceFormat">
+    <value>Azure 画像編集の参照画像は PNG/JPEG のみです。拡張子と画像内容を一致させてください。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferenceSize">
+    <value>各参照画像は空でない、50 MB 未満のファイルにしてください。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferences">
+    <value>参照画像は省略するか、有効な画像を16枚以内で選択してください。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidResponse">
+    <value>API 応答の JSON または画像 Base64 が不正です。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="InvalidSize">
+    <value>解像度は auto または 幅x高さ。各辺は16の倍数・3840以下、縦横比1:3～3:1、総画素数655,360～8,294,400にしてください。</value>
+  </data>
+  <data xml:space="preserve" name="Landscape4kPreset">
+    <value>16:9 — 3840 × 2160（実験的）</value>
+  </data>
+  <data xml:space="preserve" name="LanguageHeader">
+    <value>表示言語 / Language</value>
+  </data>
+  <data xml:space="preserve" name="LanguageHelp">
+    <value>言語は自動で保存され、次回起動時に適用されます。Azure 接続設定の保存は不要です。</value>
+  </data>
+  <data xml:space="preserve" name="LanguageSaved">
+    <value>表示言語を保存しました。アプリを再起動すると適用されます。</value>
+  </data>
+  <data xml:space="preserve" name="LoadingSettings">
+    <value>設定を読み込んでいます。</value>
+  </data>
+  <data xml:space="preserve" name="MissingResponseImage">
+    <value>API 応答に1枚の b64_json 画像がありません。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="MoveDown">
+    <value>下へ</value>
+  </data>
+  <data xml:space="preserve" name="MoveUp">
+    <value>上へ</value>
+  </data>
+  <data xml:space="preserve" name="NetworkFailed">
+    <value>通信に失敗しました。生成済み・課金済みの可能性があるため自動再送はしません。ネットワークを確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="NoErrorDetails">
+    <value>サービス応答に読み取れるエラー詳細がありません。</value>
+  </data>
+  <data xml:space="preserve" name="NoErrorObject">
+    <value>サービス応答に error オブジェクトがありません。</value>
+  </data>
+  <data xml:space="preserve" name="NoReferences">
+    <value>参照画像なし。プロンプトだけで新しい画像を生成できます。</value>
+  </data>
+  <data xml:space="preserve" name="NullSettings">
+    <value>設定に null は使用できません。</value>
+  </data>
+  <data xml:space="preserve" name="OpenHistory">
+    <value>選択した履歴を生成・編集画面に開く</value>
+  </data>
+  <data xml:space="preserve" name="OperationFailed">
+    <value>処理に失敗しました。既存の結果は保持しています。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="OutputDetails">
+    <value>実際の出力: {0} × {1} px / {2} / {3:N0} KB</value>
+  </data>
+  <data xml:space="preserve" name="OutputDimensionsExceeded">
+    <value>出力画像の寸法がモデルの上限を超えています。</value>
+  </data>
+  <data xml:space="preserve" name="OutputImageName">
+    <value>生成結果</value>
+  </data>
+  <data xml:space="preserve" name="OutputSaved">
+    <value>保存しました: {0}</value>
+  </data>
+  <data xml:space="preserve" name="OutputWithoutPreview">
+    <value>出力形式: {0} / {1:N0} KB（プレビュー不可）</value>
+  </data>
+  <data xml:space="preserve" name="Portrait4kPreset">
+    <value>9:16 — 2160 × 3840（実験的）</value>
+  </data>
+  <data xml:space="preserve" name="PresetHeader">
+    <value>縦横比 / 解像度プリセット</value>
+  </data>
+  <data xml:space="preserve" name="PreviewDecodeFailed">
+    <value>プレビューをデコードできません。画像データは保持されています。WebP は OS のコーデックが必要な場合があります。</value>
+  </data>
+  <data xml:space="preserve" name="PreviewHeading">
+    <value>プレビュー</value>
+  </data>
+  <data xml:space="preserve" name="PreviewPlaceholder">
+    <value>プロンプトを入力して「画像を生成」。
+参照画像はなくても始められます。
+生成・編集した画像がここに表示されます。</value>
+  </data>
+  <data xml:space="preserve" name="PreviewUnavailable">
+    <value>画像を表示できません。「名前を付けて保存」で実データを保存できます。</value>
+  </data>
+  <data xml:space="preserve" name="PromptHeader">
+    <value>プロンプト（必須）</value>
+  </data>
+  <data xml:space="preserve" name="PromptPlaceholder">
+    <value>生成例: 朝の光が差す静かな海辺。編集例: 1枚目の商品を2枚目の部屋に配置。</value>
+  </data>
+  <data xml:space="preserve" name="QualityHeader">
+    <value>画質</value>
+  </data>
+  <data xml:space="preserve" name="ReadyPrompt">
+    <value>プロンプトを入力してください。参照画像は任意です。</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceCount">
+    <value>参照画像: {0} 枚。上から順に API に送信して編集します。</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceDimensionsExceeded">
+    <value>{0}: 安全のため各辺32,768 px・総画素数1億を超える入力は読み込めません。</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceListName">
+    <value>参照画像一覧（任意・画像なしで生成可能）</value>
+  </data>
+  <data xml:space="preserve" name="ReferencePngJpegOnly">
+    <value>{0}: PNG/JPEG のみ追加できます。</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceTooLarge">
+    <value>{0}: 参照画像は50 MB未満にしてください。</value>
+  </data>
+  <data xml:space="preserve" name="ReferencesHeading">
+    <value>参照画像（任意）</value>
+  </data>
+  <data xml:space="preserve" name="ReferencesHelp">
+    <value>画像なしならプロンプトだけで新規生成。画像を追加すると、それらを参照して編集します。
+PNG / JPEG・最大16枚・各50 MB未満。ここにドロップできます。上から順に送信します。</value>
+  </data>
+  <data xml:space="preserve" name="ReloadHistory">
+    <value>再読み込み</value>
+  </data>
+  <data xml:space="preserve" name="RemoveReference">
+    <value>一覧から外す</value>
+  </data>
+  <data xml:space="preserve" name="RequestTimeout">
+    <value>応答待ちがタイムアウトしました。サーバー側では生成・課金が続いている可能性があります。自動再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="ResponseFormatMismatch">
+    <value>API が要求した {0} と異なる {1} を返しました。自動変換・再送はしません。</value>
+  </data>
+  <data xml:space="preserve" name="SaveAs">
+    <value>名前を付けて保存</value>
+  </data>
+  <data xml:space="preserve" name="SaveExtensionMismatch">
+    <value>実際の画像形式に合わせて {0} の拡張子で保存してください。</value>
+  </data>
+  <data xml:space="preserve" name="SaveSettings">
+    <value>設定を保存して適用</value>
+  </data>
+  <data xml:space="preserve" name="SavingHistory">
+    <value>生成が完了しました。履歴を保存しています。</value>
+  </data>
+  <data xml:space="preserve" name="SelectHistory">
+    <value>開く履歴を選択してください。</value>
+  </data>
+  <data xml:space="preserve" name="SelectHistoryHint">
+    <value>履歴を選択すると詳細が表示されます。</value>
+  </data>
+  <data xml:space="preserve" name="SettingsLoadFailed">
+    <value>設定を読み込めません。同梱 appsettings.json とローカル settings.json を確認してください。設定画面から修正・保存できます。</value>
+  </data>
+  <data xml:space="preserve" name="SettingsSaved">
+    <value>設定を保存し、既定の画質とサイズを適用しました。通信・生成は行っていません。</value>
+  </data>
+  <data xml:space="preserve" name="SettingsTab">
+    <value>設定</value>
+  </data>
+  <data xml:space="preserve" name="SettingsUnavailable">
+    <value>設定を読み込めません。設定画面で修正・保存するまで生成は無効です。</value>
+  </data>
+  <data xml:space="preserve" name="SetupRequired">
+    <value>まず「設定」で Azure リソース URL とデプロイ名を保存してください。</value>
+  </data>
+  <data xml:space="preserve" name="SizeHeader">
+    <value>送信サイズ（auto または 幅x高さ、カスタム入力可）</value>
+  </data>
+  <data xml:space="preserve" name="StartupError">
+    <value>アプリを開始できません。
+パッケージ登録とローカル保存先のアクセス権を確認し、再起動してください。
+
+{0}</value>
+  </data>
+  <data xml:space="preserve" name="StartupErrorTitle">
+    <value>GPT-image-2.5 Playground — 起動エラー</value>
+  </data>
+  <data xml:space="preserve" name="StorageDescription">
+    <value>ローカル保存先: {0}
+settings.json: 接続設定 / history: 生成履歴 / imports: 追加した画像のコピー。機密画像は暗号化せず保存されます。</value>
+  </data>
+  <data xml:space="preserve" name="Subtitle">
+    <value>言葉から画像を生成。参照画像を添えて編集も。</value>
+  </data>
+  <data xml:space="preserve" name="TenantMismatch">
+    <value>認証テナントがリソースと不一致です。「設定」の認証元を確認してください。AzureCli を使う場合は az login --tenant &lt;リソースのテナントID&gt; と az account set --subscription &lt;サブスクリプションID&gt; を実行し、アプリを再起動してください。画像や解像度の変更では解消しません。</value>
+  </data>
+  <data xml:space="preserve" name="ThumbnailFailed">
+    <value>サムネイルを表示できません。履歴の画像ファイルまたは OS の画像コーデックを確認してください。</value>
+  </data>
+  <data xml:space="preserve" name="TooManyReferences">
+    <value>参照画像は最大16枚です。追加する枚数を減らしてください。</value>
+  </data>
+  <data xml:space="preserve" name="TransparentJpeg">
+    <value>透明背景には PNG または WebP を選択してください。JPEG は透明にできません。</value>
+  </data>
+  <data xml:space="preserve" name="Truncated">
+    <value> …（省略）</value>
+  </data>
+  <data xml:space="preserve" name="UnexpectedFailure">
+    <value>処理に失敗しました: {0}</value>
+  </data>
+  <data xml:space="preserve" name="UnknownImageFormat">
+    <value>不明な画像形式です。</value>
+  </data>
+</root>

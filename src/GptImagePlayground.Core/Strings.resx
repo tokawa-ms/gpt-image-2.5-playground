@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data xml:space="preserve" name="AddImages">
+    <value>Add images</value>
+  </data>
+  <data xml:space="preserve" name="ApiHelp">
+    <value>API: no reference images → POST /openai/v1/images/generations (JSON). One or more images → POST /openai/v1/images/edits (multipart/form-data). The deployment name is sent as model.
+Accepts the resource root URL, /openai/v1/, or image generation/edit URL. The API on the same resource is selected based on whether reference images are present. Project URLs and arbitrary external hosts are not supported.</value>
+  </data>
+  <data xml:space="preserve" name="AppIconName">
+    <value>GPT-image-2.5 Playground icon</value>
+  </data>
+  <data xml:space="preserve" name="AuthenticationFailed">
+    <value>Azure authentication failed using {0}. Check the selected credential source and tenant in Settings. For AzureCli, run az login --tenant &lt;RESOURCE_TENANT_ID&gt; and az account set --subscription &lt;SUBSCRIPTION_ID&gt;. For VisualStudio, check your Visual Studio sign-in settings. No other credential source will be used.</value>
+  </data>
+  <data xml:space="preserve" name="AuthenticationHelp">
+    <value>Authentication: DefaultAzureCredential. AzureCli (default) uses only Azure CLI. VisualStudio also does not fall back to other credential sources. Sign in to the resource's tenant and assign the Cognitive Services OpenAI User role. AzureCli: az login --tenant &lt;TENANT_ID&gt;, then az account set --subscription &lt;SUBSCRIPTION_ID&gt;. Restart the app after changing the CLI account.</value>
+  </data>
+  <data xml:space="preserve" name="AutoPreset">
+    <value>Automatic — auto</value>
+  </data>
+  <data xml:space="preserve" name="AutoSizeDescription">
+    <value>Auto: the actual resolution will be shown after generation.</value>
+  </data>
+  <data xml:space="preserve" name="AdvancedSettings">
+    <value>Advanced settings</value>
+  </data>
+  <data xml:space="preserve" name="BackgroundHeader">
+    <value>Background</value>
+  </data>
+  <data xml:space="preserve" name="BillingNotice">
+    <value>Generation incurs Azure charges. Cancellation only stops waiting and does not guarantee that billing stops.</value>
+  </data>
+  <data xml:space="preserve" name="Cancel">
+    <value>Cancel</value>
+  </data>
+  <data xml:space="preserve" name="ComposeTab">
+    <value>Generate / Edit</value>
+  </data>
+  <data xml:space="preserve" name="ConnectionHeading">
+    <value>Azure connection</value>
+  </data>
+  <data xml:space="preserve" name="ConnectionHelp">
+    <value>Use the Foundry / Azure OpenAI resource where you deployed gpt-image-2.5-sunburst. You can paste the image generation URL shown in Foundry. No API key is used. Settings take effect after saving.</value>
+  </data>
+  <data xml:space="preserve" name="CredentialHeader">
+    <value>Credential source (sign-in used by DefaultAzureCredential)</value>
+  </data>
+  <data xml:space="preserve" name="DefaultQualityHeader">
+    <value>Default quality</value>
+  </data>
+  <data xml:space="preserve" name="DefaultSizeHeader">
+    <value>Default request size</value>
+  </data>
+  <data xml:space="preserve" name="DeploymentHeader">
+    <value>Deployment name (the Azure name, not the model name)</value>
+  </data>
+  <data xml:space="preserve" name="DropImagesOnly">
+    <value>Drop image files, not folders.</value>
+  </data>
+  <data xml:space="preserve" name="Editing">
+    <value>Waiting for Azure authentication, reference image upload, and image editing (up to 10 minutes).</value>
+  </data>
+  <data xml:space="preserve" name="EmptyDeployment">
+    <value>Deployment name is empty.</value>
+  </data>
+  <data xml:space="preserve" name="EmptyHistoryMetadata">
+    <value>History metadata is empty.</value>
+  </data>
+  <data xml:space="preserve" name="EmptySettings">
+    <value>Settings are empty.</value>
+  </data>
+  <data xml:space="preserve" name="EmptySize">
+    <value>Resolution is empty.</value>
+  </data>
+  <data xml:space="preserve" name="EndpointHeader">
+    <value>Foundry / Azure OpenAI endpoint URL</value>
+  </data>
+  <data xml:space="preserve" name="ErrorResponseTooLarge">
+    <value>The service error response exceeds 64 Ki characters and cannot be displayed.</value>
+  </data>
+  <data xml:space="preserve" name="ErrorSharingNotice">
+    <value>The request has not been retried automatically. Before sharing these details, check whether the service message includes any of your input.</value>
+  </data>
+  <data xml:space="preserve" name="ErrorTitle">
+    <value>Please check the operation</value>
+  </data>
+  <data xml:space="preserve" name="ExperimentalSize">
+    <value> — Experimental high resolution. Be aware of cost and wait time.</value>
+  </data>
+  <data xml:space="preserve" name="FileAccessDenied">
+    <value>File access was denied. Check the save location and permissions.</value>
+  </data>
+  <data xml:space="preserve" name="FileIoFailed">
+    <value>Could not read or write a file: {0}</value>
+  </data>
+  <data xml:space="preserve" name="FormatHeader">
+    <value>Format</value>
+  </data>
+  <data xml:space="preserve" name="Generate">
+    <value>Generate image</value>
+  </data>
+  <data xml:space="preserve" name="GeneratedWithReferences">
+    <value>Result and reference images saved to local history.</value>
+  </data>
+  <data xml:space="preserve" name="GeneratedWithoutReferences">
+    <value>Result saved to local history (no reference images).</value>
+  </data>
+  <data xml:space="preserve" name="Generating">
+    <value>Waiting for Azure authentication and image generation from your prompt (up to 10 minutes).</value>
+  </data>
+  <data xml:space="preserve" name="GenerationCancelled">
+    <value>Stopped waiting. Server-side generation and billing may continue. The existing result is still available.</value>
+  </data>
+  <data xml:space="preserve" name="HistoryDetails">
+    <value>{0} | {1} | Background: {2}
+Deployment: {3}
+{4}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryFileMissing">
+    <value>History file not found: {0}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryFormatMismatch">
+    <value>The history image format does not match its metadata.</value>
+  </data>
+  <data xml:space="preserve" name="HistoryHelp">
+    <value>Opening an entry restores the reference image order, prompt, parameters, and output. Use Save as to save another copy. History is stored only on this device.</value>
+  </data>
+  <data xml:space="preserve" name="HistoryImageTooLarge">
+    <value>The history image exceeds the app's 96 MiB loading limit.</value>
+  </data>
+  <data xml:space="preserve" name="HistoryListName">
+    <value>Generation history</value>
+  </data>
+  <data xml:space="preserve" name="HistoryLoadFailed">
+    <value>Could not load history {0}: {1}</value>
+  </data>
+  <data xml:space="preserve" name="HistoryOpened">
+    <value>History opened in Generate / Edit. Regeneration uses your currently saved connection settings.</value>
+  </data>
+  <data xml:space="preserve" name="HistorySaveFailed">
+    <value>Could not save history. The result is still available. Use Save as to save a copy.</value>
+  </data>
+  <data xml:space="preserve" name="HistoryTab">
+    <value>History</value>
+  </data>
+  <data xml:space="preserve" name="Http400">
+    <value>HTTP 400: The API rejected the request. Check the service details below. Settings will not be changed automatically.</value>
+  </data>
+  <data xml:space="preserve" name="Http401">
+    <value>HTTP 401: Check your Azure authentication.</value>
+  </data>
+  <data xml:space="preserve" name="Http403">
+    <value>HTTP 403: Check the Cognitive Services OpenAI User role on the resource and its network restrictions.</value>
+  </data>
+  <data xml:space="preserve" name="Http404">
+    <value>HTTP 404: Check the resource URL, deployment name, and API availability.</value>
+  </data>
+  <data xml:space="preserve" name="Http429">
+    <value>HTTP 429: Rate limit or quota exceeded. Try again later. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="HttpOther">
+    <value>HTTP {0}: The API request failed. Generation and billing may already have completed. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="ImportingReference">
+    <value>Loading reference image: {0}</value>
+  </data>
+  <data xml:space="preserve" name="IncompleteHistory">
+    <value>An incomplete history entry remains.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidBundledSettings">
+    <value>The bundled settings JSON object is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidCredentialSource">
+    <value>Select AzureCli or VisualStudio as the credential source.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidDefaultQuality">
+    <value>Default quality is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidDeployment">
+    <value>Use letters, digits, hyphens, underscores, and periods in the deployment name (up to 128 characters).</value>
+  </data>
+  <data xml:space="preserve" name="InvalidEndpoint">
+    <value>Set a Foundry / Azure OpenAI HTTPS URL. Supported domains: services.ai.azure.com, openai.azure.com, cognitiveservices.azure.com. User information, queries, fragments, and non-default ports are not allowed.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidEndpointPath">
+    <value>Use the resource root URL, /openai/v1/, or /openai/v1/images/generations or edits. Project URLs and other API paths are not supported.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidErrorResponse">
+    <value>The service error response is empty or is not valid JSON.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidHistoryFileName">
+    <value>The history file name is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidHistoryMetadata">
+    <value>History metadata is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidImageData">
+    <value>The image data is not PNG, JPEG, or WebP.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidImageOptions">
+    <value>Quality, output format, or background is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidLocalSettings">
+    <value>The local settings JSON object is invalid.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidPrompt">
+    <value>Enter a prompt between 1 and 32,000 characters.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferenceFormat">
+    <value>Azure image editing accepts only PNG/JPEG reference images. The file extension must match the image content.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferenceSize">
+    <value>Each reference image must be a non-empty file smaller than 50 MB.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidReferences">
+    <value>Use no reference images, or select up to 16 valid images.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidResponse">
+    <value>The API response contains invalid JSON or image Base64. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidSize">
+    <value>Use auto or WIDTHxHEIGHT. Both dimensions must be multiples of 16 and no greater than 3840, with an aspect ratio from 1:3 to 3:1 and 655,360–8,294,400 total pixels.</value>
+  </data>
+  <data xml:space="preserve" name="Landscape4kPreset">
+    <value>16:9 — 3840 × 2160 (experimental)</value>
+  </data>
+  <data xml:space="preserve" name="LanguageHeader">
+    <value>Language / 表示言語</value>
+  </data>
+  <data xml:space="preserve" name="LanguageHelp">
+    <value>Your language choice is saved automatically and takes effect the next time you start the app. You do not need to save Azure connection settings.</value>
+  </data>
+  <data xml:space="preserve" name="LanguageSaved">
+    <value>Display language saved. Restart the app to apply it.</value>
+  </data>
+  <data xml:space="preserve" name="LoadingSettings">
+    <value>Loading settings.</value>
+  </data>
+  <data xml:space="preserve" name="MissingResponseImage">
+    <value>The API response does not contain exactly one b64_json image. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="MoveDown">
+    <value>Move down</value>
+  </data>
+  <data xml:space="preserve" name="MoveUp">
+    <value>Move up</value>
+  </data>
+  <data xml:space="preserve" name="NetworkFailed">
+    <value>The network request failed. Generation and billing may already have completed, so the request will not be retried automatically. Check your network connection.</value>
+  </data>
+  <data xml:space="preserve" name="NoErrorDetails">
+    <value>The service response contains no readable error details.</value>
+  </data>
+  <data xml:space="preserve" name="NoErrorObject">
+    <value>The service response contains no error object.</value>
+  </data>
+  <data xml:space="preserve" name="NoReferences">
+    <value>No reference images. You can generate a new image using only a prompt.</value>
+  </data>
+  <data xml:space="preserve" name="NullSettings">
+    <value>Settings cannot contain null values.</value>
+  </data>
+  <data xml:space="preserve" name="OpenHistory">
+    <value>Open selected entry in Generate / Edit</value>
+  </data>
+  <data xml:space="preserve" name="OperationFailed">
+    <value>The operation failed. The existing result is still available. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="OutputDetails">
+    <value>Actual output: {0} × {1} px / {2} / {3:N0} KB</value>
+  </data>
+  <data xml:space="preserve" name="OutputDimensionsExceeded">
+    <value>Output image dimensions exceed the model limit.</value>
+  </data>
+  <data xml:space="preserve" name="OutputImageName">
+    <value>Generated result</value>
+  </data>
+  <data xml:space="preserve" name="OutputSaved">
+    <value>Saved: {0}</value>
+  </data>
+  <data xml:space="preserve" name="OutputWithoutPreview">
+    <value>Output format: {0} / {1:N0} KB (preview unavailable)</value>
+  </data>
+  <data xml:space="preserve" name="Portrait4kPreset">
+    <value>9:16 — 2160 × 3840 (experimental)</value>
+  </data>
+  <data xml:space="preserve" name="PresetHeader">
+    <value>Aspect ratio / resolution preset</value>
+  </data>
+  <data xml:space="preserve" name="PreviewDecodeFailed">
+    <value>Could not decode the preview. The image data is still available. WebP may require an OS codec.</value>
+  </data>
+  <data xml:space="preserve" name="PreviewHeading">
+    <value>Preview</value>
+  </data>
+  <data xml:space="preserve" name="PreviewPlaceholder">
+    <value>Enter a prompt and choose Generate image.
+You can start without reference images.
+Generated or edited images appear here.</value>
+  </data>
+  <data xml:space="preserve" name="PreviewUnavailable">
+    <value>The image cannot be displayed. Use Save as to save the original image data.</value>
+  </data>
+  <data xml:space="preserve" name="PromptHeader">
+    <value>Prompt (required)</value>
+  </data>
+  <data xml:space="preserve" name="PromptPlaceholder">
+    <value>Generate: a quiet beach in morning light. Edit: place the product from image 1 in the room from image 2.</value>
+  </data>
+  <data xml:space="preserve" name="QualityHeader">
+    <value>Quality</value>
+  </data>
+  <data xml:space="preserve" name="ReadyPrompt">
+    <value>Enter a prompt. Reference images are optional.</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceCount">
+    <value>Reference images: {0}. Images will be sent to the editing API in the order shown.</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceDimensionsExceeded">
+    <value>{0}: for safety, images exceeding 32,768 pixels on either side or 100 million total pixels cannot be loaded.</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceListName">
+    <value>Reference images (optional; generation works without images)</value>
+  </data>
+  <data xml:space="preserve" name="ReferencePngJpegOnly">
+    <value>{0}: only PNG/JPEG images can be added.</value>
+  </data>
+  <data xml:space="preserve" name="ReferenceTooLarge">
+    <value>{0}: reference images must be smaller than 50 MB.</value>
+  </data>
+  <data xml:space="preserve" name="ReferencesHeading">
+    <value>Reference images (optional)</value>
+  </data>
+  <data xml:space="preserve" name="ReferencesHelp">
+    <value>Without images, create a new image from your prompt. Add images to use them as editing references.
+PNG / JPEG, up to 16 images, each smaller than 50 MB. Drop files here. Images are sent in the order shown.</value>
+  </data>
+  <data xml:space="preserve" name="ReloadHistory">
+    <value>Reload</value>
+  </data>
+  <data xml:space="preserve" name="RemoveReference">
+    <value>Remove</value>
+  </data>
+  <data xml:space="preserve" name="RequestTimeout">
+    <value>The request timed out. Generation and billing may still continue on the server. The request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="ResponseFormatMismatch">
+    <value>The API returned {1} instead of the requested {0}. The image will not be converted and the request will not be retried automatically.</value>
+  </data>
+  <data xml:space="preserve" name="SaveAs">
+    <value>Save as</value>
+  </data>
+  <data xml:space="preserve" name="SaveExtensionMismatch">
+    <value>Save with the {0} extension to match the actual image format.</value>
+  </data>
+  <data xml:space="preserve" name="SaveSettings">
+    <value>Save and apply settings</value>
+  </data>
+  <data xml:space="preserve" name="SavingHistory">
+    <value>Generation completed. Saving history.</value>
+  </data>
+  <data xml:space="preserve" name="SelectHistory">
+    <value>Select a history entry to open.</value>
+  </data>
+  <data xml:space="preserve" name="SelectHistoryHint">
+    <value>Select a history entry to see its details.</value>
+  </data>
+  <data xml:space="preserve" name="SettingsLoadFailed">
+    <value>Could not load settings. Check the bundled appsettings.json and local settings.json. You can correct and save settings in the Settings tab.</value>
+  </data>
+  <data xml:space="preserve" name="SettingsSaved">
+    <value>Settings saved and default quality and size applied. No network request or generation has been performed.</value>
+  </data>
+  <data xml:space="preserve" name="SettingsTab">
+    <value>Settings</value>
+  </data>
+  <data xml:space="preserve" name="SettingsUnavailable">
+    <value>Could not load settings. Generation is disabled until you correct and save settings.</value>
+  </data>
+  <data xml:space="preserve" name="SetupRequired">
+    <value>First, save your Azure resource URL and deployment name in Settings.</value>
+  </data>
+  <data xml:space="preserve" name="SizeHeader">
+    <value>Request size (auto or WIDTHxHEIGHT; custom sizes allowed)</value>
+  </data>
+  <data xml:space="preserve" name="StartupError">
+    <value>Could not start the app.
+Check package registration and permissions for the local storage folder, then restart.
+
+{0}</value>
+  </data>
+  <data xml:space="preserve" name="StartupErrorTitle">
+    <value>GPT-image-2.5 Playground — Startup error</value>
+  </data>
+  <data xml:space="preserve" name="StorageDescription">
+    <value>Local storage: {0}
+settings.json: connection settings / history: generated images and metadata / imports: copies of added images. Sensitive images are stored without app-level encryption.</value>
+  </data>
+  <data xml:space="preserve" name="Subtitle">
+    <value>Generate images from words. Add reference images to edit them.</value>
+  </data>
+  <data xml:space="preserve" name="TenantMismatch">
+    <value>The authentication tenant does not match the resource. Check the credential source in Settings. For AzureCli, run az login --tenant &lt;RESOURCE_TENANT_ID&gt; and az account set --subscription &lt;SUBSCRIPTION_ID&gt;, then restart the app. Changing the image or resolution will not resolve this error.</value>
+  </data>
+  <data xml:space="preserve" name="ThumbnailFailed">
+    <value>Could not display the thumbnail. Check the history image file or OS image codec.</value>
+  </data>
+  <data xml:space="preserve" name="TooManyReferences">
+    <value>You can use up to 16 reference images. Add fewer images.</value>
+  </data>
+  <data xml:space="preserve" name="TransparentJpeg">
+    <value>Choose PNG or WebP for a transparent background. JPEG does not support transparency.</value>
+  </data>
+  <data xml:space="preserve" name="Truncated">
+    <value> … (truncated)</value>
+  </data>
+  <data xml:space="preserve" name="UnexpectedFailure">
+    <value>The operation failed: {0}</value>
+  </data>
+  <data xml:space="preserve" name="UnknownImageFormat">
+    <value>Unknown image format.</value>
+  </data>
+</root>
